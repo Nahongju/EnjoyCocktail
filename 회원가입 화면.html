@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>칵테일:로그인</title>
+<style>
+	h1 {
+    	text-align: center;
+		font-family: courier;
+    	font-size: 500%;
+	}
+
+</style>
+</head>
+
+<body>
+<h1>Cocktail</h1>
+<div style="position:absolute;left:630px;top:130px;width:280px">
+<p style="font-size:150%">A Enjoying your Cocktail</p>
+</div>
+
+<form name="accountform1" action="memberSave.php" method="post">
+	<!--이름 입력-->
+	<div style="position:absolute;left:570px;top:220px">
+	<p>이름</p>
+	<input name="username" type="text" style="width:400px;height:50px">
+	</div>
+
+	<!--ID 입력-->
+	<div style="position:absolute;left:570px;top:330px">
+	<p>ID</p>
+	<input name="id" type="text" style="width:400px;height:50px">
+	</div>
+
+	<!--PW 입력-->
+	<div style="position:absolute;left:570px;top:440px">
+	<p>PW</p>
+	<input name="pwd" type="password" style="width:400px;height:50px">
+	</div>
+
+	<!--PW 확인-->
+	<div style="position:absolute;left:570px;top:550px">
+	<p>PW 확인</p>
+	<input type="password" style="width:400px;height:50px">
+	</div>
+
+	<!--생년월일-->
+	<div style="position:absolute;left:570px;top:660px">
+	<p>생년월일</p>
+	<input name="birthday" type="date" name="bday" min="1950-01-02" style="width:400px;height:50px">
+	</div>
+
+	<!--성별-->
+	<div style="position:absolute;left:570px;top:770px">
+	<p>성별</p>
+	<select name="Sex" style="width:400px;height:50px">
+	<option value="성별">성별</option>
+	<option value="남자">남자</option>
+	<option value="여자">여자</option>
+	</select>
+	</div>
+
+	<!--이메일-->
+	<div style="position:absolute;left:570px;top:880px">
+	<p>이메일</p>
+	<input name="emailid" type="text" style="width:180px;height:50px">
+
+	<div style="position:absolute;left:190px;top:50px">
+	<p name= "email1" style="font-size:130%">@</p>
+	</div>
+
+	<div style="position:absolute;left:220px;top:53px">
+	<select name="emailb" style="width:180px;height:50px">
+	<option value="select">선택하시오</option>
+	<option value="naver.com">naver.com</option>
+	<option value="daum.net">daum.net</option>
+	<option value="gmail.com">gmail.com</option>
+	<option value="hanmail.net">hanmail.net</option>
+	</select>
+	</div>
+
+	<div style="position:absolute;left:0px;top:130px">
+	<input type="submit"  value="회원가입" style="width:400px;height:50px">
+	<br><br>
+	</div>
+</form>
+
+
+</body>
+</html>

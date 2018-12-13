@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>칵테일: ID 찾기</title>
+<style>
+h1 {
+  text-align: center;
+	font-family: courier;
+  font-size: 500%;
+}
+
+h2 {
+	text-align:center;
+}
+p {
+	text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<!--제목-->
+<h1>Cocktail</h1>
+
+<div style="margin-top:-35px">
+  <h2>ID 찾기</h2>
+</div>
+
+<form name="SearchId1" action="SearchId.php" method="post">
+  <!--이름-->
+  <div style="margin-left:-420px;margin-top:43px">
+    <p>이름 :</p>
+  </div>
+
+  <center>
+    <div style="margin-left:22px;margin-top:-55px">
+      <input type="text" name="Name" style="width:375px;height:50px">
+    </div>
+  </center>
+
+
+  <!--생년월일-->
+  <div style="margin-left:-452px;margin-top:40px">
+  <p>생년월일 :</p>
+  </div>
+
+  <center>
+  <div style="margin-left:22px;margin-top:-55px">
+  <input type="date" name="bday" min="1950-01-02" style="width:375px;height:50px">
+  </div>
+  <center>
+
+  <!--이메일-->
+  <div style="margin-left:-436px;margin-top:43px">
+  <p>이메일 :</p>
+  </div>
+
+  <center>
+  <div style="margin-left:-184px;margin-top:-54px">
+  <input type="text" name="frontemail" style="width:170px;height:50px">
+  </div>
+  </center>
+
+  <div style="margin-left:20px;margin-top:-65px">
+  <p style="font-size:130%">@</p>
+  </div>
+
+  <center>
+  <div style="margin-left:228px;margin-top:-58px">
+  <select name="emailBack" style="width:175px;height:50px">
+  <option value="0">선택하시오.</option>
+  <option value="naver.com">naver.com</option>
+  <option value="daum.net">daum.net</option>
+  <option value="gmail.com">gmail.com</option>
+  <option value="hanmail.net">hanmail.net</option>
+  </select>
+  </div>
+  </center>
+
+  <!--ID 찾기 버튼-->
+  <center>
+  <div style="margin-top:30px;margin-left:21px">
+  <input type="submit" value="ID 찾기" style="width:380px;height:50px">
+  </div>
+  </center>
+</form>
+
+
+</body>
+</html>

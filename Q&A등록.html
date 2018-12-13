@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Q&A등록 Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+h1{
+    color: orange;
+    text-shadow: 3px 2px black;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width: 70%;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+</style>
+</head>
+
+<body>
+
+<!--LOGIN & Go to main 버튼-->
+<div style="position:absolute;left:1270px;top:20px">
+<a href="http://1.247.212.109:8012/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.html">Login</a>
+</div>
+<div style="position:absolute;left:1370px;top:20px;width:150px">
+<img src="logo.png" width = 15px height=15px>
+<a href="http://1.247.212.109:8012/main.html" title="main으로 가려면 클릭하세요">Go to main</a>
+</div>
+
+<!--Menu-->
+<ul style="position:absolute;width:350px;left:160px">
+  <li><a href="http://1.247.212.109:8012/All.html">ALL</a></li>
+  <li><a href="http://1.247.212.109:8012/Base.html">BASE</a></li>
+  <li><a href="http://1.247.212.109:8012/Usage.html">USAGE</a></li>
+  <li><a href="http://1.247.212.109:8012/NonAlcohol.html">NON-ALCOHOL</a></li>
+  <li><a href="http://1.247.212.109:8012/Q&A.html">Q&A</a></li>
+</ul>
+
+<!--Title-->
+<div style="position:absolute;left:620px;top:65px">
+<h1 style="font-size:230%;font-family: courier">Q&A 등록</h1>
+<br>
+
+<!--Type-->
+<div style="position:absolute;left:0px;top:105px">
+<img src="logo.png" width=20px height=20px>
+</div>
+<div style="position:absolute;left:30px;top:85px;width:250px">
+<h3>Select type</h3>
+</div>
+<div style="position:absolute;left:150px;top:105px;width:200px">
+<select name="type">
+  <option value="선택">선택</option>
+  <option value="Add Cocktail">Add Cocktail</option>
+  <option value="Requirements">Requirement</option>
+  <option value="Web Service Issues">Web Service Issues</option>
+</select>
+</div>
+
+<div style="position:absolute;left:3px;top:175px">
+<textarea name="review" style="width:600px;height:300px" placeholder="질문을 등록해주세요!"></textarea>
+<br><br>
+</div>
+<div style="position:absolute;left:250px;top:510px">
+<input type="button" onClick="location.href='http://1.247.212.109:8012/Q&A.html'" value="Q&A 등록" style="padding:10px 20px">
+</div>
+<div style="position:absolute;left:530px;top:510px">
+<input type="button" onClick="location.href='http://1.247.212.109:8012/Q&A.html'" value="목록" style="padding:10px 20px">
+</div>
+
+</body>
+</html>

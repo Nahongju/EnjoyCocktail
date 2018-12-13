@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Review_list Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<style>
+
+table{
+    border-collapse: collapse;
+    font-size:14px;
+}
+
+tr{
+    border: 1px solid black;
+    padding: 2px;
+}
+
+td{
+    text-align: left;
+    padding: 7px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+</style>
+</head>
+
+<body>
+
+<!--LOGIN & Go to main 버튼-->
+<div style="position:absolute;left:1270px;top:20px">
+<a href="http://1.247.212.109:8012/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.html" title="main으로 가려면 클릭하세요">Login</a>
+</div>
+<div style="position:absolute;left:1370px;top:20px">
+<img src="logo.png" width = 15px height=15px>
+<a href="http://1.247.212.109:8012/main.html">Go to main</a>
+</div>
+
+<!--Review Cocktail-->
+<div style="position:absolute;left:150px;top:65px">
+<img src="review_cocktail.jpg">
+</div>
+
+<!--Title-->
+<div style="position:absolute;left:380px;top:65px">
+<h1 style="font-size:250%;font-family: courier">Average grade </h1>
+</div>
+<div style="position:absolute;left:730px;top:100px">
+<img src="cocktail_full.png" width=30px height=30px>
+<img src="cocktail_full.png" width=30px height=30px>
+<img src="cocktail_full.png" width=30px height=30px>
+<img src="cocktail_full.png" width=30px height=30px>
+<img src="cocktail_full.png" width=30px height=30px>
+</div>
+<div style="position:absolute;left:930px;top:75px">
+<h2>5.0</h2>
+<br>
+</div>
+
+<!--목록-->
+<div style="position:absolute;left:370px;top:180px;width:470px">
+   <table style="width:195%;border:2px solid">
+     <tr>
+       <th style="width:30%"><h3>평점</h3></th>
+       <th style=="width:70%"><h3>리뷰</h3></th>
+     </tr>
+
+     <tr>
+       <td style="width:30%"><h3></h3></td>
+       <td style=="width:70%"><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+     <tr>
+       <td><h3></h3></td>
+       <td><h3></h3></td>
+     </tr>
+</table>
+</div>
+
+<!--Button-->
+<div style="position:absolute;left:1188px;top:560px">
+<input type="button" onClick="location.href='http://1.247.212.109:8012/Review.html'" value="리뷰등록" style="padding:10px 20px">
+</div>
+
+<!--Pagination-->
+<div style="position:absolute;width:600px;left: 575px;top: 630px">
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+</div>
+
+</body>
+</html>

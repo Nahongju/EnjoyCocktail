@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cocktail등록 Page</title>
+<style>
+.WrapperDiv{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.conDiv{
+  display: inline-block;
+  position:absolute;
+}
+table{
+    border-collapse: collapse;
+    font-size:12px;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+td{
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+  <form name=recipeform method=_POST action="addcocktail.php">
+    <div class="WrapperDiv">
+    <!--LOGIN & Go to main button-->
+      <div class="conDiv" style="left:1270px;top:20px">
+        <a href="http://1.247.212.109:8012/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.html">Login</a>
+      </div>
+      <div class="conDiv" style="left:1370px;top:20px;width:200px">
+        <img src="logo.png" width = 15px height=15px>
+        <a href="http://1.247.212.109:8012/관리자_main.html" title="main으로 가려면 클릭하세요">Go to main</a>
+      </div>
+
+    <!--Cocktail 등록-->
+      <div class="conDiv" style="left:410px;top:65px;width:220px;height:250px">
+    	  <img class="cockimg" src="logo.png" style="height:70%">
+      </div>
+
+      <div class="conDiv" style="left:430px;top:280px;width:200px">
+        <input type="file" id="Cockimgname" name="cocktialFile" accept=".png, .jpg, .jpeg">
+      </div>
+
+      <div class="conDiv" style="left:650px;top:40px;width:200px">
+        <h4>Cocktail 이름</h4>
+      </div>
+
+      <div class="conDiv" style="left:650px;top:90px">
+        <input name="cocktailname" type="text" placeholder="cocktail 이름" required>
+      </div>
+
+      <div class="conDiv" style="left:650px;top:104px;width:200px">
+    <!--추가할 메뉴 체크-->
+        <h4>* Alcohol or Non-Alcohol</h4>
+        <input type="radio" name="alcohol" checked="checked" value="Alcohol">Alcohol
+        <input type="radio" name="alcohol" value="Non-Alcohol">Non-Alcohol
+      </div>
+
+      <div class="conDiv" style="left:900px;top:104px;width:400px">
+        <h4>* Usage</h4>
+        <input type="radio" name="usage" value="Aperitif">Aperitif
+        <input type="radio" name="usage" value="All Day Type">All Day Type
+        <br>
+        <input type="radio" name="usage" value="After Dinner">After Dinner
+        <input type="radio" name="usage" value="No Usage">No Usage
+      </div>
+
+      <div class="conDiv" style="left:650px;top:200px;width:500px">
+        <h4>* Base</h4>
+        <input type="checkbox" name="base[]" value="GIN">GIN
+        <input type="checkbox" name="base[]" value="LIQUEUR">LIQUEUR
+        <input type="checkbox" name="base[]" value="WHISKY">WHISKY
+        <input type="checkbox" name="base[]" value="BRANDY">BRANDY
+        <input type="checkbox" name="base[]" value="RUM">RUM
+        <br>
+        <input type="checkbox" name="base[]" value="VODKA">VODKA
+        <input type="checkbox" name="base[]" value="TEQUILA">TEQUILA
+        <input type="checkbox" name="base[]" value="WINE">WINE
+        <input type="checkbox" name="base[]" value="우리술">우리술
+        <input type="checkbox" name="base[]" value="No Base">No Base
+      </div>
+
+      <div class="conDiv" style="left:410px; top:330px;width:200px">
+        <h4>Cocktail 도수</h4>
+      </div>
+
+      <div class="conDiv" style="left:410px;top:386px">
+        <textarea name="cocktailAlcohol" style="width:200px;height:30px" placeholder="Cocktail 도수를 적어주세요"></textarea>
+      </div>
+
+      <div class="conDiv" style="left:410px;top:430px;width:200px">
+        <h4>Cocktail 레시피</h4>
+      </div>
+
+      <div class="conDiv" style="left:410px;top:486px">
+        <textarea name="cocktailrecipe" style="width:750px;height:200px" placeholder="Cocktail 재료 및 비율을 적어주세요.
+
+ex)
+
+드라이 진 22ml
+스윗트 베르무트 22ml
+캄파리 22m
+
+장식 : Twist of Lemon Peel"></textarea>
+      </div>
+
+      <div class="conDiv" style="left:410px;top:700px;width:200px">
+        <h4>Cocktail 설명:</h4>
+      </div>
+      <div class="conDiv" style="left:410px;top:755px">
+        <textarea name="cocktailexplanation" style="width:750px;height:250px" placeholder="Cocktail 설명을 작성하세요.
+
+ex)
+
+캄파리의 쌉쌀한 맛이 특징인 칵테일이다!
+
+니그로니라는 것은 이탈리아의 카미로 니그로니 백작의 이름으로, 백작이 즐겨 마셨던 식전주라고 알려져 있다.
+
+피렌체에 있는 유명한 레스토랑 카소니의 바텐더가 1962년 백작의 허락으로 '네그로니'라고 발표했다."></textarea>
+      <br><br>
+      </div>
+
+      <div class="conDiv" style="left:940px;top:1020px;width:300px">
+        <input type="submit"  value="등록하기" style="padding:5px 81px">
+    <!--
+        <input type="submit" onClick="location.href='http://1.247.212.109:8012/관리자_main.html'" value="등록하기" style="padding:5px 81px">
+    -->
+        <br><br>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
